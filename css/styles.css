@@ -231,7 +231,7 @@ li {
   border: var(--button-color);
   border-radius: 4px;
   cursor: pointer;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: var(--anim-time)var(--animation-timing-function);
 }
 .btn:hover,
 .btn:focus {
