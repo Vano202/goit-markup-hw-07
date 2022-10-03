@@ -1,0 +1,18 @@
+footer {
+    background-color: var(--backgfoot-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    &__conteiner{
+        display: flex;
+        align-items: baseline;
+    }
+    &__logo{
+        color: var(--button-color);   
+    }
+    &__icon{
+        fill:var(--backgfoot-color);
+    }
+  }
+  
+   
+  

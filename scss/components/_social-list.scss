@@ -1,0 +1,23 @@
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .social__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    fill: var(--header-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover ,&:focus{
+        background-color: var(--focus-color);
+    }
+  }
+  .social__icon {
+    fill: currentColor;
+  }

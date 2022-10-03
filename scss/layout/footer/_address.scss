@@ -1,0 +1,20 @@
+.adress {
+    margin-top: 20px;
+    height: 81px;
+    width: 231px;
+    &__item:not(:last-child){
+        margin-bottom: 9px;
+    }
+  }
+  .address__link {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    text-decoration: none;
+    padding-top: 20px;
+    color: var(--header-color);
+    transition:color var(--anim-time)var(--animation-timing-function);
+    &:hover, &:focus{
+        color: var(--button-color);
+    }
+  }
