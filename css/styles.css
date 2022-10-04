@@ -730,17 +730,6 @@ textarea {
   fill: var(--focus-color);
 }
 
-.form-modal input {
-  position: relative;
-  padding: 12px 42px;
-  color: var(--black-color);
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  cursor: pointer;
-  outline: none;
-  transition: border-color var(--anim-time) var(--animation-timing-function);
-}
-
 .label-coment {
   margin-bottom: 20px;
 }
@@ -760,7 +749,7 @@ textarea {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
-  color: var(--grey-color-50);
+  color: var(--seconds-text);
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
