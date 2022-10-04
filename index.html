@@ -22,19 +22,19 @@
     <header class="headr">
       <div class="conteiner header-conteiner">
         <nav class="nav">
-          <a href="./index.html" class="logo"><span class="logo-web">Web</span>Studio</a>
-          <ul class="nav-list">
-            <li class="nav-item"><a href="./index.html" class="nav-link curent">Студія</a></li>
-            <li class="nav-item"><a href="./portfolio.html" class="nav-link">Портфоліо</a></li>
-            <li class="nav-item"><a href="" class="nav-link">Контакти</a></li>
+          <a href="./index.html" class="logo"><span class="logo__web">Web</span>Studio</a>
+          <ul class="nav__list">
+            <li class="nav__item"><a href="./index.html" class="nav__link nav__link--curent">Студія</a></li>
+            <li class="nav__item"><a href="./portfolio.html" class="nav__link">Портфоліо</a></li>
+            <li class="nav__item"><a href="" class="nav__link">Контакти</a></li>
           </ul>
         </nav>
         <div class="contacts">
-          <a href="mailto:info@devstudio.com" class="cont-link"><svg class="contact-icon" width="16" height="12"></svg>
+          <a href="mailto:info@devstudio.com" class="contact__link"><svg class="contact__icon" width="16" height="12"></svg>
             <use href="./images/icons.svg#envelope"></use></svg>info@devstudio.com </a>
   
-            <a href="tel:+380961111111" class="cont-link ">
-              <svg class="contact-icon" width="10" height="16">
+            <a href="tel:+380961111111" class="contact__link ">
+              <svg class="contact__icon" width="10" height="16">
               <use href="./images/icons.svg#smartphone"></use></svg> +38 096 111 11 11</a>
         </div>
       </div>
@@ -275,26 +275,26 @@
       </div>
     </section>
     <footer class="footer">
-      <div class="conteiner footer-cont ">
-      <div class="addres-group">
-        <a href="./index.html" class="logo-footer"><span class="logo-web">Web</span>Studio</a>
+      <div class="footer__conteiner conteiner">
+      <div class="address__group">
+        <a href="./index.html" class=" logo footer__logo"><span class="logo__web">Web</span>Studio</a>
         
         <address class="address">
-          <ul class="address-list list">
-            <li class="address-item">
+          <ul class="address__list">
+            <li class="address__item">
               <a
-                class="address-link"
+                class="address__link"
                 href="https://goo.gl/maps/Am5QFGTBEeLttjaw7"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
                 >м. Київ, пр-т Лесі Українки, 26</a>
             </li>
 
-            <li class="address-item">
-              <a href="mailto:info@devstudio.com" class="cont-link-footer">
+            <li class="address__item">
+              <a href="mailto:info@devstudio.com" class="address__link address__link--color">
                 <span lang="en">info@devstudio.com</span></a>
             </li>
-            <li class="address-item"><a href="tel:+380961111111" class="cont-link-footer">+38 096 111 11 11</a></li>
+            <li class="address__item"><a href="tel:+380961111111" class="address__link address__link--color">+38 096 111 11 11</a></li>
           </ul>
         </address>
       </div>
@@ -316,15 +316,15 @@
       </ul>
     </div>
     <!--ПРИЄДНУЙТЕСЬ-->
-    <div class="send-group">
-      <p class="titel-form">Підпишіться на розсилку</p>
-      <form class="form-footer">
-        <label class="label-mail-footer">
-          <input class="imp-mail-footer" type="email" name="email" placeholder="E-mail" required >
+    <div class="send">
+      <p class="send__titel">Підпишіться на розсилку</p>
+      <form class="send__form">
+        <label class="send_label">
+          <input class="send__input" type="email" name="email" placeholder="E-mail" required >
         </label>
-          <button class="btn-submit" type="submit">
+          <button class="send__btn btn" type="submit">
              Підписатися 
-            <svg class="icon-send" width="24" height="24">
+            <svg class="send__icon" width="24" height="24">
               <use href="./images/icons.svg#send"></use>
             </svg>
           </button>           
@@ -340,46 +340,46 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <form class="form-modal">
-         <p class="titel-modal-form">Залиште свої дані, ми вам передзвонимо</p>
-          <label class="label-name form-label-cont">
-           <svg class="icon-form-cont" width="18" height="18">
+        <form class="form">
+         <p class="form__titel">Залиште свої дані, ми вам передзвонимо</p>
+          <label class="form__field">
+           <svg class="form__icon" width="18" height="18">
             <use href="./images/icons.svg#person"></use>
            </svg>
-          <span class="name-lbl-modal">Ім'я</span>
-          <input type="text" name="name" required>  
+          <span class="name-label-modal">Ім'я</span>
+          <input class="form__input" type="text" name="name" required>  
          </label>
 
-         <label class="label-tel form-label-cont">
-            <svg class="icon-form-cont" width="18" height="18">
+         <label class="form__field">
+            <svg class="form__icon" width="18" height="18">
              <use href="./images/icons.svg#phone-f"></use>
             </svg>
-           <span class="name-label-modal">Телефон</span>
-           <input type="tel" name="phone" required>  
+           <span class="form__label">Телефон</span>
+           <input class="form__input" type="tel" name="phone" required>  
          </label>
 
-         <label class="label-mail-form form-label-cont">
-            <svg class="icon-form-cont" width="18" height="18">
+         <label class="form__field">
+            <svg class="form__icon" width="18" height="18">
              <use href="./images/icons.svg#email-f"></use>
             </svg>
-           <span class="name-label-modal">Пошта</span>
-           <input type="email" name="email" required>  
+           <span class="form__label">Пошта</span>
+           <input class="form__input" type="email" name="email" required>  
          </label>
 
-         <label class="label-coment">
-           <span class="name-label-modal">Кометар</span>
-           <textarea class="feedback-form" name="feedback" placeholder="Введіть текст"></textarea>
+         <label class="form__field form_field--margin">
+           <span class="form__label">Кометар</span>
+           <textarea class="form__feedback" name="feedback" placeholder="Введіть текст"></textarea>
          </label>
 
-         <label class="label-checkbox">
-         <input class="checkbox" type="checkbox" name="privacy policy" value="privacy policy" required>
-         <svg class="icon-check" width="16" height="15">
+         <label class="form__label-checkbox">
+         <input class="form__checkbox visually-hidden" type="checkbox" name="privacy policy" value="privacy policy" required>
+         <svg class="form__icon-check" width="16" height="15">
           <use href="./images/icons.svg#check"></use>
          </svg>
-         <span class="icon-checkbox"></span>
-         <span class="policy-text">
+         <span class="form__icon-box"></span>
+         <span class="form__policy-text">
           Погоджуюся з розсилкою та приймаю 
-          <a class="policy" href target="_blank" rel="noopener noreferrer">
+          <a class="form__policy-link" href target="_blank" rel="noopener noreferrer">
             Умови договору
           </a>
          </span>

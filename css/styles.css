@@ -90,6 +90,15 @@ a{
   padding: 0 15px;
 }
 
+.titel {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.13;
+  text-align: center;
+
+  margin-bottom: 50px;
+  }
+
 /*   HEADER     */
 .header {
   border-bottom: 1px solid var(--frame-header);
@@ -149,7 +158,7 @@ a{
   color: var(--blue-color);
 }
 
-.nav-link {
+.nav__link {
   display: block;
   padding: 32px 0;
 
@@ -160,8 +169,8 @@ a{
   transition: color var(--anim-time) var(--animation-timing-function);
 }
 
-.nav-link:hover,
-.nav-link:focus {
+.nav__link:hover,
+.nav__link:focus {
   color: var(--blue-color);
 }
 
@@ -186,11 +195,11 @@ a{
   margin-left: auto;
 }
 
-.contact-icon {
+.contact__icon {
   fill: currentColor;
 }
 
-.cont-link {
+.contact__link {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -202,12 +211,12 @@ a{
   transition: color var(--anim-time) var(--animation-timing-function);
 }
 
-.cont-link:hover,
-.cont-link:focus {
+.cont__link:hover,
+.cont__link:focus {
   color: var(--blue-color);
 }
 
-.cont-link:nth-child(n + 2) {
+.cont__link:nth-child(n + 2) {
   margin-left: 50px;
 }
 
@@ -478,14 +487,13 @@ a{
   color: var(--white-color);
 }
 
-.address-item:not(:last-child) {
+.address__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.address-link {
+.address__link {
   line-height: 1.71;
   color: var(--white-color);
-
   transition: color var(--anim-time) var(--animation-timing-function);
 }
 
@@ -551,7 +559,6 @@ a{
 
 .titel-form{
   margin-bottom: 20px;
-
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -559,7 +566,7 @@ a{
   color: var(--white-color);
 }
 
-.imp-mail-footer{
+.send__input{
   display: block;
   width: 358px;
   height: 50px;
@@ -567,13 +574,11 @@ a{
   color: var(--link-footer-cl);
   font-size: 16px;
   line-height: 1.25;
-
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   outline: none;
   cursor: pointer;
-
   transition: border-color var(--anim-time) var(--animation-timing-function);
 }
 
@@ -582,7 +587,7 @@ a{
   border: 1px solid var(--blue-color);
 }
 
-.btn-submit{
+.send__btn{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -604,7 +609,7 @@ a{
   transition: background-color var(--anim-time) var(--animation-timing-function);
 }
 
-.icon-send{
+.send__icon{
   fill: currentColor;
 }
 /*  МОДАЛЬНЕ ВІКНО  */
@@ -700,18 +705,14 @@ textarea{
   text-align: center;
 }
 
-.form-modal input{
+.form__input{
   position: relative;
   padding: 12px 42px;
-
   color: var(--black-color);
-
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-
   cursor: pointer;
   outline: none;
-
   transition: border-color var(--anim-time) var(--animation-timing-function);
 }
 
@@ -725,20 +726,17 @@ textarea{
 
 .form-modal label:nth-child(-n + 4){
   margin-bottom: 10px;
-
-  
 }
 
 .form-label-cont{
   position: relative;
 }
 
-.icon-form-cont{
+.form__icon{
   position: absolute;
   bottom: 12px;
   left: 11px;
   z-index: 1;
-
   transition: fill var(--anim-time) var(--animation-timing-function);
 }
 
@@ -749,39 +747,31 @@ textarea{
 
 
 
-.name-label-modal{
+.form__label{
   display: block;
   margin-bottom: 4px;
-
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: var(--grey-color);
-
 }
 
 .label-coment{
   margin-bottom: 20px;
 }
 
-.feedback-form{
+.form__feedback{
   resize: none;
   height: 120px;
-
   padding: 12px 16px;
-
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: var(--grey-color-50);
-
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-
   outline: none;
-
   cursor: pointer;
-
   transition: border-color var(--anim-time) var(--animation-timing-function);
 }
 
@@ -800,7 +790,7 @@ textarea{
   cursor: pointer;
 }
 
-.label-checkbox > .checkbox{
+.form__icon-check {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -827,7 +817,7 @@ textarea{
   opacity: 1;
 }
 
-.icon-checkbox{
+.form__icon-box{
   display: block;
   width: 16px;
   height: 15px;
@@ -843,15 +833,14 @@ textarea{
   outline: 2px solid var(--blue-color);
 }
 
-.policy-text{
+.form__policy-text{
   font-size: 14px;
   line-height: 1.71;
   color: var(--grey-color);
-
   user-select: none;
 }
 
-.policy{
+.form__policy-link{
   color: var(--blue-color);
 }
 
