@@ -7,6 +7,9 @@
     opacity: 1;
     transition: opacity var(--anim-time) var(--animation-timing-function),
       visibility var(--anim-time) var(--animation-timing-function);
+      &__is-hidden{
+        transform: translate(-50%, -50%) scale(1.1);
+      }
   }
   .is-hidden {
     visibility: hidden;
