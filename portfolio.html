@@ -19,7 +19,7 @@
   </head>
   <body>
     <header class="headr">
-      <div class="conteiner header-conteiner">
+      <div class="conteiner">
         <nav class="nav">
         <a href="./portfolio.html" class="logo">
           <span lang="en"><span class="logo__web">Web</span>Studio</span></a>
@@ -40,176 +40,177 @@
     </header>
     <main>
       <!--filters-->
-      <section class="section-portfolio section ">
+      <section class="portfolio section ">
         <div class="conteiner">
           <h1 class="visually-hidden">Усі фільтри</h1>
-          <ul class="portfolio-list list">
-            <li class="portfolio-item"><button type="button" class="filter">Усі</button></li>
-            <li class="portfolio-item"><button type="button" class="filter">Додатки</button></li>
-            <li class="portfolio-item"><button type="button" class="filter">Веб-сайти</button></li>
-            <li class="portfolio-item"><button type="button" class="filter">Дизайн</button></li>
-            <li class="portfolio-item"><button type="button" class="filter">Маркетинг</button></li>
+          <ul class="filter">
+            <li class="filter__item"><button type="button" class="filter__btn">Усі</button></li>
+            <li class="filter__item"><button type="button" class="filter__btn">Додатки</button></li>
+            <li class="filter__item"><button type="button" class="filter__btn">Веб-сайти</button></li>
+            <li class="filter__item"><button type="button" class="filter__btn">Дизайн</button></li>
+            <li class="filter__item"><button type="button" class="filter__btn">Маркетинг</button></li>
           </ul>
           <!--projects-->
 
-          <ul class="works-list list">
-            <li class="works-item">
-              <a class="works-card" href="#">
-                <div class="img-card"><img
-                  class="works-img"
+          <ul class="card-set">
+            <li class="card-set__item">
+              <a class="card-set__card" href="#">
+                <div class="card-set__group-img">
+                  <img
+                  class="card-set__img"
                   src="./images/imgs.jpg"
                   alt="Зображення сайту на ноутбуці"
                   width="370"
                   height="294"
                 />
-                <div class="overlay">
-                  <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                <div class="card-set__overlay">
+                  <p class="card-set__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                 </div>
               </div>
-              <div class="work-titel-type">
-                <h2 class="works-title">Технокряк</h2>
-                <p class="works-type">Веб-сайт</p></div
+              <div class="card-set__group-t">
+                <h2 class="card-set__title">Технокряк</h2>
+                <p class="card-set__type">Веб-сайт</p></div
               >
             </a>
             </li>
-            <li class="works-item">
-              <a class="works-card" href="#">
-                <div class="img-card">
+            <li class="card-set__item">
+              <a class="card-set__card" href="#">
+                <div class="card-set__group-img">
                 <img
-                class="works-img"
+                class="card-set__img"
                 src="./images/img1.jpg"
                 alt="Баскетболісти"
                 width="370"
                 height="294"
-              /><div class="overlay">
-                <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+              /><div class="card-set__overlay">
+                <p class="card-set__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div>
             </div>
-              <div class="work-titel-type">
-                <h2 class="works-title">Постер New Orlean vs Golden Star</h2>
-                <p class="works-type">Дизайн</p></div
+              <div class="card-set__group-t">
+                <h2 class="card-set__title">Постер New Orlean vs Golden Star</h2>
+                <p class="card-set__type">Дизайн</p></div
               >
               </a>
             </li>
-            <li class="works-item">
-              <a class="works-card" href="#">
-                <div class="img-card">
+            <li class="card-set__item">
+              <a class="card-set__card" href="#">
+                <div class="card-set__group-img">
                 <img
-                class="works-img"
+                class="card-set__img"
                 src="./images/img2.jpg"
                 alt="Логотип ресторану"
                 width="370"
                 height="294"
-              /><div class="overlay">
-                <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+              /><div class="card-set__overlay">
+                <p class="card-set__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div>
             </div>
-              <div class="work-titel-type">
-                <h2 class="works-title">Ресторан Seafood</h2>
-                <p class="works-type">Додаток</p></div
+              <div class="card-set__group-t">
+                <h2 class="card-set__title">Ресторан Seafood</h2>
+                <p class="card-set__type">Додаток</p></div
               >
             </a>
             </li>
-            <li class="works-item">
-              <a class="works-card" href="#">
-                <div class="img-card">
-                <img class="works-img" src="./images/img3.jpg" alt="Наушники" width="370" height="294" />
-                <div class="overlay">
-                  <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+            <li class="card-set__item">
+              <a class="card-set__card" href="#">
+                <div class="card-set__group-img">
+                <img class="card-set__img" src="./images/img3.jpg" alt="Наушники" width="370" height="294" />
+                <div class="card-set__overlay">
+                  <p class="card-set__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                 </div>
               </div>
-                <div class="work-titel-type">
+                <div class="card-set__group-t">
                   <h2 class="works-title">Проєкт Prime</h2>
-                  <p class="works-type">Маркетинг</p></div
+                  <p class="card-set__type">Маркетинг</p></div
                 >
               </a>
             </li>
-            <li class="works-item">
-              <a class="works-card" href="#">
-                <div class="img-card">
-                <img class="works-img" src="./images/img4.jpg" alt="Коробки" width="370" height="294" />
-                <div class="overlay">
-                  <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+            <li class="card-set__item">
+              <a class="card-set__card" href="#">
+                <div class="card-set__group-img">
+                <img class="card-set__img" src="./images/img4.jpg" alt="Коробки" width="370" height="294" />
+                <div class="card-set__overlay">
+                  <p class="card-set__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                 </div>
               </div>
-                <div class="work-titel-type">
-                  <h2 class="works-title">Проєкт Boxes</h2>
-                  <p class="works-type">Додаток</p></div
+                <div class="card-set__group-t">
+                  <h2 class="card-set__title">Проєкт Boxes</h2>
+                  <p class="card-set__type">Додаток</p></div
                 >
               </a>
             </li>
-            <li class="works-item">
-             <a class="works-card" href="#">
-              <div class="img-card">
+            <li class="card-set__item">
+             <a class="card-set__card" href="#">
+              <div class="card-set__group-img">
               <img
-              class="works-img"
+              class="card-set__img"
               src="./images/img5.jpg"
               alt="Веб-сайт на моніторі"
               width="370"
               height="294"
-            /><div class="overlay">
-              <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+            /><div class="card-set__overlay">
+              <p class="card-set__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
             </div>
           </div>
-            <div class="work-titel-type">
-              <h2 class="works-title">Inspiration has no Borders</h2>
-              <p class="works-type">Веб-сайт</p></div
+            <div class="card-set__group-t">
+              <h2 class="card-set__title">Inspiration has no Borders</h2>
+              <p class="card-set__type">Веб-сайт</p></div
             >
              </a>
             </li>
-            <li class="works-item">
-              <a class="works-card" href="#">
-                <div class="img-card">
+            <li class="card-set__item">
+              <a class="card-set__card" href="#">
+                <div class="card-set__group-img">
                 <img
-                class="works-img"
+                class="card-set__img"
                 src="./images/img6.jpg"
                 alt="Розгорнута книга"
                 width="370"
                 height="294"
-              /><div class="overlay">
-                <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+              /><div class="card-set__overlay">
+                <p class="card-set__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div>
             </div>
-              <div class="work-titel-type">
-                <h2 class="works-title">Видання Limited Edition</h2>
-                <p class="works-type">Дизайн</p></div
+              <div class="card-set__group-t">
+                <h2 class="card-set__title">Видання Limited Edition</h2>
+                <p class="card-set__type">Дизайн</p></div
               ></a>
             </li>
-            <li class="works-item">
-              <a class="works-card" href="#">
-                <div class="img-card">
+            <li class="card-set__item">
+              <a class="card-set__card" href="#">
+                <div class="card-set__group-img">
                 <img
-                class="works-img"
+                class="card-set__img"
                 src="./images/img7.jpg"
                 alt="Брелок з написом"
                 width="370"
                 height="294"
-              /><div class="overlay">
-                <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+              /><div class="card-set__overlay">
+                <p class="card-set__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div>
             </div>
-              <div class="work-titel-type">
-                <h2 class="works-title">Проєкт LAB</h2>
-                <p class="works-type">Маркетинг</p></div
+              <div class="card-set__group-t">
+                <h2 class="card-set__title">Проєкт LAB</h2>
+                <p class="card-set__type">Маркетинг</p></div
               >
             </a>
             </li>
-            <li class="works-item">
-              <a class="works-card" href="#">
-                <div class="img-card">
+            <li class="card-set__item">
+              <a class="card-set__card" href="#">
+                <div class="card-set__group-img">
                 <img
-                class="works-img"
+                class="card-set__img"
                 src="./images/img8.jpg"
                 alt="Робота за ноутбуком"
                 width="370"
                 height="294"
-              /><div class="overlay">
-                <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+              /><div class="card-set__overlay">
+                <p class="card-set__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div>
             </div>
-              <div class="work-titel-type">
-                <h2 class="works-title">Growing Business</h2>
-                <p class="works-type">Додаток</p></div>
+              <div class="card-set__group-t">
+                <h2 class="card-set__title">Growing Business</h2>
+                <p class="card-set__type">Додаток</p></div>
             </a>
             </li>
           </ul>

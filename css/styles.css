@@ -851,30 +851,26 @@ textarea{
 }
 
 /*      PORTOFOLIO        */
-.portfolio-list {
+.filter {
   display: flex;
   margin-bottom: 50px;
   justify-content: center;
   gap: 8px;
 }
 
-.filter {
+.filter__btn{
   background-color: var(--background-color-second);
   color: var(--black-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
-
   cursor: pointer;
   font-family: inherit;
-
   padding: 6px 22px;
-
   box-shadow: none;
   border-radius: 4px;
   border: 0;
-
   transition: background-color var(--anim-time) var(--animation-timing-function), 
   color var(--anim-time) var(--animation-timing-function),
   box-shadow var(--anim-time) var(--animation-timing-function);
@@ -904,9 +900,8 @@ textarea{
   margin-left: 30px;
 }
 
-.works-card {
+.card-set__card {
   display: block;
-
   transition: box-shadow var(--anim-time) var(--animation-timing-function);
 }
 
@@ -915,12 +910,12 @@ textarea{
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.img-card{
+.card-set__group-img{
   position: relative;
   overflow: hidden;
 }
 
-.overlay{
+.card-set__overlay{
   position: absolute;
   top: 0;
   left: 0;
@@ -942,21 +937,20 @@ textarea{
   transform: translateY(0%);
 }
 
-.overlay-text{
+.card-set__overlay-text{
   color: var(--white-color);
   font-size: 18px;
   line-height: 1.56;
 }
 
-.work-titel-type {
+.card-set__group-t {
   padding: 20px 24px;
   border: 1px solid var(--frame-cards);
   border-top: none;
 }
 
-.works-title {
+.card-set__title {
   margin-bottom: 4px;
-
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -964,7 +958,7 @@ textarea{
   color: var(--black-color);
 }
 
-.works-type {
+.card-set__type {
   font-size: 16px;
   line-height: 1.88;
   color: var(--grey-color);
