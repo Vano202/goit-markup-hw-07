@@ -231,7 +231,7 @@ a{
   background-repeat: no-repeat;
   background-position: center;
 }
-.hero-title {
+.hero__titel {
   height: 120px;
   width: 696px;
   margin: auto;
@@ -271,7 +271,7 @@ a{
 
 /*detail*/
 
-.skill-list {
+.skill__list {
   display: flex;
 }
 
@@ -279,7 +279,7 @@ a{
   margin-left: 30px;
 }
 
-.skill-icon {
+.skills__icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -289,11 +289,11 @@ a{
   background-color: var(--background-color-second);
 }
 
-.skill-items {
+.skills__item {
   width: 270px;
 }
 
-.titel-items {
+.skills__titel {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -302,7 +302,7 @@ a{
   margin-bottom: 10px;
 }
 
-.text-skills {
+.skills__text {
   line-height: 1.71;
   color: var(--grey-color);
 }
@@ -323,13 +323,13 @@ a{
   padding-top: 0;
 }
 
-.activity-list {
+.activity__list {
   display: flex;
   justify-content: space-between;
   
 }
 
-.activity-items{
+.activity__item{
   position: relative;
 }
 
@@ -337,18 +337,15 @@ a{
   margin-left: 30px;
 }
 
-.label{
+.activity__label{
   position: absolute;
   width: 100%;
   height: 70px;
   bottom: 0;
-
   display: flex;
   justify-content: center;
   align-items: center;
-
   background-color: var(--bg-label);
-
   font-weight: 700;
   line-height: 1.14;
   text-align: center;
@@ -357,7 +354,7 @@ a{
   }
   
 /*team*/
-.section-team {
+.team {
   background-color: var(--background-color-second);
 }
 .team-title {
@@ -368,7 +365,7 @@ a{
   margin-bottom: 50px;
   color: var(--black-color);
 }
-.team-list {
+.team__list {
   display: flex;
 }
 .team-items {
@@ -384,7 +381,7 @@ a{
   padding: 30px;
 }
 
-.employee {
+.team__employee {
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -393,19 +390,19 @@ a{
   color: var(--black-color);
   background-color: var(--background-color);
 }
-.team-position {
+.team__position {
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
   color: var(--grey-color);
   background-color: var(--header-color);
 }
-.social-list {
+.social {
   display: flex;
   margin-top: 16px;
   gap: 10px;
 }
-.link-social {
+.social__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -423,22 +420,20 @@ a{
 }
 
 /*Clients*/
-.comp-list {
+.customers__list {
   display: flex;
   gap: 30px;
 }
 
-.comp-link {
+.customers__link {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 170px;
   height: 92px;
-
   color: var(--cl-icon);
   border: 1px solid var(--cl-icon);
   border-radius: 4px;
-
   transition: color var(--anim-time) var(--animation-timing-function), 
   border var(--anim-time) var(--animation-timing-function);
 }
@@ -449,7 +444,7 @@ a{
   border: 1px solid var(--blue-color);
 }
 
-.comp-icon {
+.customers__icon {
   fill: currentColor;
 }
 
@@ -514,11 +509,11 @@ a{
   color: var(--blue-color);
 }
 
-.social-group {
+.social__group {
   margin-left: 70px;
 }
 
-.titel-link {
+.social__titel {
   text-transform: uppercase;
     margin: 0;
     margin-bottom: 20px;
@@ -527,16 +522,15 @@ a{
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-
   color: var(--white-color);
 }
 
-.social-group > .social {
+.social--retreat {
   align-content: center;
   margin-top: 20px;
 }
 
-.social-group .link-social {
+.footer__social{
   background-color: var(--bg-cl-icon-footer);
 }
 
@@ -613,15 +607,13 @@ a{
   fill: currentColor;
 }
 /*  МОДАЛЬНЕ ВІКНО  */
-.modal-bg{
+.modal{
   position: fixed;
   width: 100%;
   height: 100%;
   top: 0; 
-
   background-color: var(--bg-modal);
   opacity: 1;
-
   transition: opacity var(--anim-time) var(--animation-timing-function),
   visibility var(--anim-time) var(--animation-timing-function);
 }
@@ -637,48 +629,38 @@ a{
 
 }
 
-.modal{
+.modal__window{
   position: absolute;
   width: 528px;
   height: 581px;
   left: 50%;
   top: 50%;
   padding: 40px;
-  
-
   background: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
   0px 1px 1px rgba(0, 0, 0, 0.14),
   0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-
   transform: translate(-50%, -50%) scale(1);
-
   transition: transform var(--anim-time) var(--animation-timing-function);
-  
 }
 
 
-.btn-x{
+.modal__btn-x{
   position: absolute;
   width: 30px;
   height: 30px;
   top: 8px;
   right: 8px;
-
   padding: 9px;
-
-
   background-color: var(--white-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-
   transition: fill var(--anim-time) var(--animation-timing-function);
 }
 
-.icon-x{
+.modal__icon-x{
   display: block;
-
   transition: fill var(--anim-time) var(--animation-timing-function);
 }
 

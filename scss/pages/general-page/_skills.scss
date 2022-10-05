@@ -1,0 +1,26 @@
+.skill__list {
+    display: flex;
+}
+.skills__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: var(--background-color-second);
+}
+.skills__item {
+    width: 270px;
+}
+.skills__titel {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.skills__text {
+    line-height: 1.71;
+    color: var(--grey-color);
+}
