@@ -2,6 +2,7 @@
     display: flex;
     margin-top: 16px;
     gap: 10px;
+    justify-content: center;
 }
 .social__link {
     display: flex;
@@ -16,7 +17,4 @@
         fill: var(--background-color);
   background-color: var(--blue-second);
     }
-}
-.social__icon{
-    fill:currentColor;
 }
