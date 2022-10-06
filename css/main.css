@@ -90,7 +90,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-.conteiner {
+.container {
   width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
@@ -267,14 +267,22 @@ button {
   text-align: center;
 }
 
-.form_field {
+.form__field {
   position: relative;
 }
-.form_field:nth-child(-n+4) {
+.form__field:nth-child(-n+4) {
   margin-bottom: 10px;
 }
 
+.input {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
 .form__input {
+  font-size: 100%;
   position: relative;
   padding: 12px 42px;
   color: var(--black-color);
@@ -310,7 +318,7 @@ button {
   color: var(--grey-color);
 }
 
-.form_field--margin {
+.form__field--margin {
   margin-bottom: 20px;
 }
 
@@ -353,7 +361,7 @@ button {
   overflow: hidden;
 }
 .form__checkbox:checked ~ .form__icon-check {
-  opacity: 1;
+  opacity: 0;
 }
 
 .form__icon-box {
@@ -484,7 +492,7 @@ button {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.footer__conteiner {
+.footer__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -494,9 +502,6 @@ button {
 }
 .footer__logo {
   color: var(--white-color);
-}
-.footer__icon {
-  fill: currentColor;
 }
 
 .address {
@@ -518,7 +523,7 @@ button {
 }
 
 .address__link--color {
-  color: var(--link-footer-cl);
+  color: var(--grey-color);
 }
 
 .social__group {
@@ -545,6 +550,7 @@ button {
 
 .footer__social {
   background-color: var(--bg-cl-icon-footer);
+  fill: var(--white-color);
 }
 .footer__social:hover, .footer__social:focus {
   background-color: var(--blue-color);

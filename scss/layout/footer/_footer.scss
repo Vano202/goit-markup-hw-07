@@ -2,14 +2,12 @@
     background-color: var(--backgraund-footer);
     padding-top: 60px;
     padding-bottom: 60px;
-    &__conteiner{
+    &__container{
         display: flex;
         align-items: baseline;
     }
     &__logo{
         color: var(--white-color);
     }
-    &__icon{
-        fill:currentColor;
-    }
+   
   }
