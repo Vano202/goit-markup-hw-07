@@ -172,7 +172,7 @@ button {
   width: 216px;
   height: 50px;
   display: block;
-  margin: auto;
+  margin: 0 auto;
   background-color: var(--blue-color);
   color: var(--background-color);
   border: var(--blue-color);
@@ -274,11 +274,9 @@ button {
   margin-bottom: 10px;
 }
 
-.input {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
+.input, textarea {
+  display: block;
+  width: 100%;
 }
 
 .form__input {
@@ -288,6 +286,7 @@ button {
   color: var(--black-color);
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  width: 100%;
   cursor: pointer;
   outline: none;
   -webkit-transition: border-color var(--anim-time) var(--animation-timing-function);
@@ -316,6 +315,20 @@ button {
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: var(--grey-color);
+}
+
+.form__label-checkbox {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  gap: 7px;
+  cursor: pointer;
 }
 
 .form__field--margin {
@@ -352,16 +365,15 @@ button {
 
 .form__icon-check {
   position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
   border: 0;
   padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+  fill: var(--white-color);
+  background-color: var(--blue-color);
+  border-radius: 2px;
+  opacity: 0;
 }
 .form__checkbox:checked ~ .form__icon-check {
-  opacity: 0;
+  opacity: 1;
 }
 
 .form__icon-box {
@@ -391,6 +403,11 @@ button {
 
 .form__policy-link {
   color: var(--blue-color);
+}
+
+.modal__btn {
+  width: 200px;
+  height: 50px;
 }
 
 .header {
@@ -641,6 +658,8 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0;
+  gap: 30px;
 }
 
 .skills__icon {
@@ -854,8 +873,8 @@ button {
 }
 .card-set__card:hover .card-set__overlay, .card-set__card:focus .card-set__overlay {
   opacity: 1;
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
 }
 
 .card-set__group-img {

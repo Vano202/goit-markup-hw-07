@@ -14,18 +14,19 @@
     />
     <!--MODERN-NORMALIZE-->
     <link rel="stylesheet" href="./css/modern-normalize.css" />
+    <link rel="stylesheet" href="./css/main.min.css"/>
     <!--Style-->
-    <link rel="stylesheet" href="./css/styles.css" />
+    
   </head>
   <body>
-    <header class="headr">
-      <div class="conteiner">
+    <header class="header">
+      <div class="container header-container">
         <nav class="nav">
         <a href="./portfolio.html" class="logo">
           <span lang="en"><span class="logo__web">Web</span>Studio</span></a>
           <ul class="nav__list">
             <li class="nav__item"><a href="./index.html" class="nav__link">Студія</a></li>
-            <li class="nav__item"><a href="./portfolio.html" class="nav__link--curent">Портфоліо</a></li>
+            <li class="nav__item"><a href="./portfolio.html" class="nav__link nav__link--curent">Портфоліо</a></li>
             <li class="nav__item"><a href="" class="nav__link">Контакти</a></li>
           </ul>
         </nav>
@@ -41,7 +42,7 @@
     <main>
       <!--filters-->
       <section class="portfolio section ">
-        <div class="conteiner">
+        <div class="container">
           <h1 class="visually-hidden">Усі фільтри</h1>
           <ul class="filter">
             <li class="filter__item"><button type="button" class="filter__btn">Усі</button></li>
@@ -120,7 +121,7 @@
                 </div>
               </div>
                 <div class="card-set__group-t">
-                  <h2 class="works-title">Проєкт Prime</h2>
+                  <h2 class="card-set__title">Проєкт Prime</h2>
                   <p class="card-set__type">Маркетинг</p></div
                 >
               </a>
@@ -218,7 +219,7 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="footer__conteiner conteiner">
+      <div class="footer__container container">
       <div class="address__group">
         <a href="./portfolio.html" class="logo footer__logo">
           <span lang="en"><span class="logo__web">Web</span>Studio</span></a>
@@ -243,26 +244,26 @@
           </ul>
         </address>
       </div>
-      <div class="social-group">
-        <p class="titel-link">Приєднуйтесь</p>
-        <ul class="social-list">
-          <li class="social-item"><a class="link link-social" href widht="44" height="44"><svg class="icon-social" width="20" height="20">
+      <div class="social__group">
+        <p class="social__titel">Приєднуйтесь</p>
+        <ul class="social social--retreat">
+          <li class="social__item"><a class="social__link footer__social" href widht="44" height="44"><svg class="social__icon footer__icon" width="20" height="20">
             <use href="./images/icons.svg#instagram"></use>
           </svg></a></li>
-          <li class="social-item"><a class="link link-social" href widht="44" height="44"><svg class="icon-social" width="20" height="20">
+          <li class="social__item"><a class="social__link footer__social" href widht="44" height="44"><svg class="social__icon footer__icon" width="20" height="20">
             <use href="./images/icons.svg#twitter"></use>
           </svg></a></li>
-          <li class="social-item"><a class="link link-social" href widht="44" height="44"><svg class="icon-social" width="20" height="20">
+          <li class="social__item"><a class="social__link footer__social" href widht="44" height="44"><svg class="social__icon footer__icon" width="20" height="20">
             <use href="./images/icons.svg#facebook"></use>
           </svg></a></li>
-          <li class="social-item"><a class="link link-social" href widht="44" height="44"><svg class="icon-social" width="20" height="20">
+          <li class="social__item"><a class="social__link footer__social" href widht="44" height="44"><svg class="social__icon footer__icon" width="20" height="20">
             <use href="./images/icons.svg#linkedin"></use>
           </svg></a></li>
         </ul>
       </div>
       <div class="send">
         <p class="send__titel">Підпишіться на розсилку</p>
-        <form class="send_form">
+        <form class="send__form">
           <label class="send_label">
             <input class="send__input" type="email" name="email" placeholder="E-mail" required >
           </label>

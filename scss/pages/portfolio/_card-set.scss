@@ -15,7 +15,7 @@
  &:hover .card-set__overlay,
  &:focus .card-set__overlay{
     opacity: 1;
-    transform: translateY(100%);
+    transform: translateY(0%);
  }
 }
 .card-set__group-img{
@@ -33,6 +33,7 @@
     transition: transform var(--anim-time) var(--animation-timing-function),
     opacity var(--anim-time) var(--animation-timing-function);
 }
+
 .card-set__overlay-text{
     color: var(--white-color);
     font-size: 18px;
